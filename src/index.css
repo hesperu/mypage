@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+@layer components {
+    .profile_text{
+        @apply lg:text-base text-3xl lg:py-2 py-6 rounded-lg font-bold mb-2 text-slate-600	
+    }
+    .smapho_nav_contents{
+        @apply lg:text-3xl font-bold cursor-pointer hover:text-yellow-500 pl-10 py-5;
+    }
+    .experience_history_box {
+        @apply flex flex-col bg-white shadow-md my-4 p-4;
+    }
+    .experience_title {
+        @apply lg:text-xl text-4xl font-bold mb-2;
+    }
+    .experience_description {
+        @apply lg:text-base text-3xl text-slate-600 mb-2;
+    }
+    .experience_period {
+        @apply lg:text-base text-3xl text-gray-700;
+    }
+    .experience_link{
+        @apply lg:text-base text-4xl text-blue-500 hover:text-blue-800;
+    }    
+    .nav_contents{
+        @apply invisible lg:visible lg:text-3xl font-bold cursor-pointer hover:text-yellow-500
+    }
+}
+  
